@@ -1,0 +1,390 @@
+/* Importing Vars */
+
+@import url(./var.css);
+
+/*----------------*/
+
+/* Body styles */
+
+body {
+    font-family: var(--bf);
+    background-color: var(--bg);
+    color: whitesmoke;
+    scroll-behavior: smooth;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.mid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.heading {
+    color: var(--yl);
+    font-family: var(--hf);
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 2.5rem;
+}
+
+.sub {
+    color: var(--or);
+    font-family: var(--sf);
+    font-weight: 600;
+    font-size: 2.5rem;
+
+}
+
+.ab {
+    width: 1.8rem;
+    margin-right: 0.5rem;
+}
+
+.edu {
+    width: 2.1rem;
+    margin-right: 0.5rem;
+}
+
+.sk {
+    width: 3rem;
+    margin-right: 0.5rem;
+}
+
+.con {
+    width: 2.7rem;
+    margin-right: 0.5rem;
+}
+
+/* -----------*/
+
+/* For Logo */
+
+#name {
+    display: inline-block;
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo h1 {
+    font-family: var(--lf);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--yl);
+}
+
+.logo img {
+    height: 37px;
+    width: 37px;
+}
+
+.nav-item a {
+    font-family: var(--hf);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--or);
+}
+
+.navbar {
+    background-color: var(--bg);
+}
+
+.alt {
+    background-color: var(--bg1);
+}
+
+.navbar-nav .nav-item .active {
+    color: var(--yl);
+}
+
+
+.navbar-nav .nav-item a:hover {
+    color: var(--yl);
+}
+
+.navbar-toggler {
+    background-color: var(--yl);
+}
+
+
+/* ----------------- */
+
+/* ----- #Home ----- */
+
+
+#home .container-fluid .row .img img {
+    width: 85%;
+}
+
+#home .container-fluid .row .text h3 {
+    font-size: 3em;
+    color: whitesmoke;
+    font-weight: 600;
+    font-family: var(--sf);
+}
+
+#home .container-fluid .row .text h1 {
+    font-size: 7em;
+    font-family: var(--sf);
+    color: var(--yl);
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+
+#home .container-fluid .row .text p {
+    font-size: 2em;
+    color: var(--cy);
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+
+/* -------------------- */
+
+/* ----- About Me -----*/
+
+#about .container .row .img img {
+    width: 100%;
+}
+
+.li {
+    list-style: none;
+    font-size: 2.485vh;
+    font-weight: 600;
+}
+
+.li-1 {
+    list-style: none;
+    font-size: 2.4vh;
+    font-weight: 600;
+}
+
+.li-sub,
+.li-sub h3 {
+    color: var(--or);
+    font-family: var(--sf);
+    font-weight: 600;
+    font-size: 2.5rem;
+
+}
+
+.li-sub h3 span {
+    font-family: var(--bf);
+    font-size: 1.5rem;
+}
+
+.li li {
+    color: var(--li);
+}
+
+.li>li:nth-of-type(1),
+.li-1 li {
+    color: var(--cy);
+}
+
+.li-1 li span {
+    color: var(--or);
+}
+
+.abt {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* ---------------------- */
+
+/* ----- Portfolio ----- */
+
+#portfolio .container .row .img img {
+    width: 80%;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vh;
+
+}
+
+.logos>img {
+    width: 17%;
+}
+
+/* --------------------- */
+
+/* ------ Contact ------ */
+
+#contact .container .row .img img {
+    width: 90%;
+}
+
+.inp {
+    width: 100%;
+}
+
+form {
+    background-color: var(--bg);
+    padding: 2vh;
+    border: 2px solid var(--yl);
+    border-radius: 15px;
+    color: var(--or);
+    font-family: var(--hf);
+}
+
+form textarea {
+    display: block;
+    width: 100%;
+}
+
+input,
+textarea {
+    color: var(--cy);
+    background-color: var(--bg1);
+    border: 2px solid var(--li);
+    border-radius: 10px;
+    font-family: var(--bf);
+    font-size: 1.1rem;
+    padding: 0px 0.5rem;
+    outline: none;
+}
+
+::placeholder {
+    color: rgba(0, 255, 255, 0.5);
+}
+
+.sbmt {
+    background-color: var(--or);
+    width: 9rem;
+    height: 3rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 7px;
+    padding-top: 5px;
+    color: whitesmoke;
+}
+
+.sbmt:hover {
+    background-color: var(--bg);
+    color: var(--or);
+    border: 2px solid var(--or);
+}
+
+.none {
+    display: none;
+}
+
+.done {
+    width: 6rem;
+    height: 3rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+label {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid var(--cy);
+}
+
+#about,
+#contact,
+.alt {
+    background-color: var(--bg1);
+}
+
+/* --------------------- */
+
+/* ------ Footer ------ */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--bg);
+    height: 25vh;
+}
+
+.flw {
+    color: var(--yl);
+    font-family: var(--hf);
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: .5em;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-evenly;
+    gap: 1.5rem;
+}
+
+.soc,
+.ghub {
+    width: 2.5rem;
+}
+
+.ghub {
+    filter: invert(50%) sepia(0%) saturate(0%) hue-rotate(17deg) brightness(100%) contrast(92%);
+}
+
+.footer p:nth-of-type(2) {
+    margin-top: 1em;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--cy);
+}
+
+.footer span {
+    color: var(--yl);
+}
+
+/* -------------------- */

@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'ComicNeue';
+    src: url(../fonts/ComicNeue.ttf);
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Italiano';
+    src: url(../fonts/Italianno.ttf);
+    font-display: block;
+}
+
+
+@font-face {
+    font-family: 'MarckScript';
+    src: url(../fonts/MarckScript.ttf);
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Rastalia';
+    src: url(../fonts/Rastalia.ttf);
+    font-display: block;
+}
+
+:root {
+    /* -----fonts----- */
+
+    --bf: 'ComicNeue', sans-serif;
+    --hf: 'Rastalia', cursive;
+    --lf: 'MarckScript', cursive;
+    --sf: 'Italiano', cursive;
+
+    /* --------------- */
+
+    /* ----- Colors ----- */
+
+    --bg: #363d4f;
+    --bg1: #404a5f;
+    --li: #99a4bf;
+    --yl: #ffcc00;
+    --cy: #72ecff;
+    --or: #FF8552;
+
+    /* ------------------ */
+}
+
+@media only screen and (min-width:320px) and (max-width:764px) {
+
+    #about,
+    #portfolio,
+    #contact {
+        padding-top: 15vh;
+    }
+
+    #about .container .row .img {
+        order: -1;
+    }
+
+    #contact .container .row .img {
+        order: -1;
+    }
+
+    .container .row div {
+        margin: 3vh 0px;
+    }
+}
